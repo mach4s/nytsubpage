@@ -16,3 +16,4 @@ Grading Criteria
   Put proper comments. (5%)
 
 
+-No drop down menus for FAQ at the bottom and "More Options" in the navbar
