@@ -1,0 +1,332 @@
+/* Variables */
+body {
+  margin: 0;
+  font-family: "Libre Franklin", Ariel, Sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1 {
+  color: #fff;
+}
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+ul li:before {
+	content: "+";
+	position: absolute;
+	left: 0;
+}
+
+.yellow {
+  color: #feff74;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.ad-banner {
+  position: fixed;
+  height: 35px;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  line-height: 35px;
+}
+.ad-banner a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  margin-top: 35px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.nav .logo {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+.nav .logo img {
+  height: 24px;
+  width: 188px;
+}
+.nav .nav-items {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-items .item {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 56px;
+  margin: 0 20px 0 0;
+  border-bottom: 3px solid transparent;
+}
+.nav .nav-items .item:hover {
+  border-color: #b2b2b2;
+  cursor: pointer;
+}
+.nav .nav-items .item.active {
+  font-weight: 700;
+  border-color: #000;
+}
+.nav .user-item {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav .user-item:hover {
+  color: #5d5d5d;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.subscribe {
+  background-color: #FF6363;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.subscribe h1 {
+  font-size: 34px;
+}
+
+.suboptions {
+  line-height: 30px;
+}
+
+.hero-text {
+  padding: 30px;
+  text-align: center;
+}
+
+.container {
+  max-width: 985px;
+  margin: 0 auto;
+}
+
+.flex-container-column{
+  flex-direction: column;
+}
+
+/*flex text used for the texts in between the flex containers*/
+.flex-text {
+  display: flex;
+  justify-content: center;
+  background-color: #FFF;
+
+}
+
+.flex-text > div {
+  background-color: #FFF;
+  width: 1000px;
+  /* margin: 10px; */
+  text-align: left;
+  /* padding: 30px; */
+  /* line-height: 75px; */
+  font-size: 16px;
+}
+
+/*flex containers for the gray boxes under the prices*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #FFF;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 450px;
+  margin: 10px;
+  text-align: left;
+  padding: 30px;
+  /* line-height: 75px; */
+  font-size: 16px;
+}
+
+
+
+
+.packages {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 35px 30px;
+}
+.packages .package-item {
+  margin-left: 15px;
+  width: 32.33%;
+}
+.packages .package-item.all .package-header {
+  background-color: #0f4a92;
+}
+.packages .package-item.all-print .package-header {
+  background-color: #2c2c2c;
+}
+.packages .package-item:hover {
+  color: #2e84ed;
+}
+.packages .package-header {
+  background-color: #2e84ed;
+  border-radius: 6px;
+  color: #fff;
+  padding: 20px;
+  font-size: 19px;
+  font-weight: 500;
+}
+.packages .package-header h3 {
+  font-size: 26px;
+  font-weight: 200;
+  margin-top: 0;
+}
+.packages .package-header p {
+  margin: 0;
+  line-height: 1;
+}
+.packages .package-header s {
+  color: rgba(255, 255, 255, 0.5);
+}
+.packages .package-header a {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+.packages .package-header a:hover {
+  background-color: #fff;
+  color: #2e84ed;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.packages .package-header .sub-text {
+  font-size: 14px;
+}
+.packages .package-features {
+  padding-top: 20px;
+}
+.packages .package-features .feature {
+  margin-top: 30px;
+}
+.packages .package-features .feature i {
+  font-size: 12px;
+  margin-right: 6px;
+  line-height: 1.5;
+}
+.packages .package-features .feature p {
+  display: flex;
+  margin: 0;
+}
+.packages .package-features .feature .feature-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.packages .package-features .feature .feature-title .bonus {
+  background-color: red;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 2px 4px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+.packages .package-features .feature .feature-body {
+  margin-left: 18px;
+}
+.packages .package-features .feature .legal-prefix {
+  margin-right: 6px;
+}
+.packages .package-features .feature .legal {
+  color: #6e6e6e;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  opacity: 0.7;
+}
+
+.legal-cancel p {
+  color: #6e6e6e;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 14px;
+  margin: 0;
+}
+
+/*flex bottom is the flex container for the bottom box*/
+.flex-bottom{
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex-bottom > div {
+
+  width: 200px;
+  margin: 10px;
+  text-align: left;
+  padding: 30px;
+  line-height: 35px;
+  font-size: 16px;
+}
+/*
+bottom button "View all FAQ" */
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: DodgerBlue;
+  border: none;
+  border-radius: 5px;
+
+}
+
+
+.footer {
+   height: 300px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+}
+
+/*# sourceMappingURL=the.css.map */
